@@ -1,0 +1,914 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,
+cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,
+ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,
+details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,
+audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+ rticle, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/****************  The END of CSS Initialization  *************/
+
+html {
+    background: white;
+}
+
+body {
+    min-width: 360px;
+    box-sizing: border-box;
+    width: 80%;
+    max-width: 800px;
+    height: auto;
+    margin: 0 auto;
+    font-family: "Arial", sans-serif;
+    border: 2px solid #000;
+    line-height: 1.5em;
+    background: #ccc;
+}
+
+.sentence {
+    display: inline;
+}
+
+.sentence h5 {
+    font-size: 1.3em;
+    color: #fff;
+    font-weight: bold;
+    margin: 15px 0 7px 0;
+    padding: 3px 3px 0 3px;
+    width: 5em;
+    text-align: center;
+    background: green;
+    border-bottom: 5px solid #debd07;
+}
+
+.main-text div.sentence {
+    font-size: 1em;
+}
+
+.main-text {
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.sentence a.kor {
+    font-size: 0.9em;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+h4 {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 7px;
+    margin-top: 15px;
+}
+
+p {
+    margin: 7px 0 15px 0;
+}
+
+/********************* .dialog **************************/
+.dialog i:nth-of-type(odd) {
+    display: block;
+    float: left;
+    clear: left;
+    width: 4.5em;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 0.8em;
+    text-align: right;
+
+}
+
+.dialog i:nth-of-type(even) {
+    display: block;
+    margin-left: 4.5em;
+}
+
+/********************* top bar **************************/
+
+#fixed-bar-top {
+    position: fixed;
+    color: #333;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#fixed-bar-top #header {
+    width: 80%;
+    max-width: 800px;
+    background: #000;
+    margin: 0 auto;
+    border-bottom: 10px solid #007f25;
+    height: 40px;
+}
+
+#fixed-bar-top #title-bar {
+    padding: 10px 4px 2px;
+    font-size: 1.2em;
+    font-family: bold;
+    height: 30px;
+}
+
+#fixed-bar-top #lesson {
+    display: block;
+    width: 20%;
+    text-align: center;
+    color: aqua;
+    /*    font-size: 1em;*/
+    /*    font-weight: bold;*/
+    float: left;
+}
+
+#fixed-bar-top #lesson_title {
+    display: block;
+    width: 60%;
+    text-align: center;
+    color: #fff;
+    /* font-size: 1em;*/
+    /* font-weight: bold;*/
+    float: left;
+}
+
+#fixed-bar-top #chapter {
+    display: block;
+    width: 20%;
+    text-align: center;
+    color: #ccc;
+    /* font-size: 1em;*/
+    /* font-weight: bold;*/
+    float: right;
+}
+
+.clearfix {
+    clear: both;
+}
+
+
+/************************* Home Menu ***********************/
+
+#nav-table {
+    padding: 50px 5%;
+    width: auto;
+    margin: 20px auto;
+    min-height: 1000px;
+}
+
+#nav-table .nav-row {
+    box-sizing: border-box;
+    margin-top: 20PX;
+}
+
+#nav-table .nav-cell {
+    width: 32%;
+     font-family: 'Arial', serif;
+}
+
+#nav-table div#cell-1 {
+            float: left;
+
+}
+
+#nav-table div#cell-2 {
+    margin: 0 2%;
+    float: left;
+
+
+}
+
+#nav-table div#cell-3 {
+    float: right;
+
+}
+
+#nav-table div#cell-4, #nav-table div#cell-6 {
+    width: 45%;
+    float: left;
+}
+
+#nav-table div#cell-5, #nav-table div#cell-7 {
+     width: 45%;
+    float: right;
+}
+
+
+#nav-table h5 {
+    width: 130px;
+    height: 22px;
+    margin: 0 auto;
+    text-align: center;
+    padding-left: 20px;
+    padding-top: 0px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #000;
+    background: url(../images/grade.png) no-repeat;
+    background-size: 15%;
+    background-position: 10px;
+    background-color: cyan;
+    border-radius: 15px;
+}
+
+#nav-table ul {
+    width: 130px;
+    margin: 10px auto;
+}
+
+#nav-table li {
+    margin: 5px auto 0 auto;
+    width: 6.5em;
+    text-align: center;
+    padding-left: 20px;
+    font-size: 1em;
+    font-weight: 700;
+    color: #fff;
+    background: url(../images/lesson.png) no-repeat;
+    background-size: 12%;
+    background-position: 2px;
+}
+
+/*
+div.nav-row div#cell-6 li, div.nav-row div#cell-7 li {
+    background-position: 2px;
+    padding-left: 20px;
+}
+*/
+
+#nav-table a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/**********************************************************/
+
+#read {
+    position: relative;
+    margin: 40px auto;
+    background: #fff;
+    padding: 20px;
+
+}
+
+/*******************      footer      *********************/
+
+#fixed-bar-bottom {
+    position: fixed;
+    background: transparent;
+    color: #333;
+    z-index: 100;
+    /*display: none;*/
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#footer {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    height: 40px;
+    background: #000;
+    margin: 0 auto;
+    color: #fff;
+    border-top: 10px solid #007f25;
+}
+
+
+
+#footer p {
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+/***************** floating button ******************/
+
+div#menu-btn {
+    position: absolute;
+    right: 30px;
+    bottom: 55px;
+    z-index: 100;
+    width: 150px;
+    background: transparent;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+button#home-btn {
+    /*position: absolute;*/
+    /*right: 100px;*/
+    background: url(../images/home_btn.png) no-repeat;
+    margin: 0 10px;
+    background-size: cover;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    border: 0;
+    outline: 0;
+    border-radius: 25px;
+    -webkit-box-shadow: 2px 6px 6px -2px rgba(0, 0, 0, 0.40);
+    -moz-box-shadow: 2px 6px 6px -2px rgba(0, 0, 0, 0.40);
+    box-shadow: 2px 6px 6px -2px rgba(0, 0, 0, 0.40);
+}
+
+button#dict-btn {
+    /*position: absolute;*/
+    /*right: 150px;*/
+    background: url(../images/dict.png) no-repeat;
+    margin: 0px 10px;
+    background-size: cover;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    border: 0;
+    outline: 0;
+    border-radius: 25px;
+    background-color: transparent;
+    -webkit-box-shadow: 2px 6px 6px -2px rgba(0, 0, 0, 0.40);
+    -moz-box-shadow: 2px 6px 6px -2px rgba(0, 0, 0, 0.40);
+    box-shadow: 2px 6px 6px -2px rgba(0, 0, 0, 0.40);
+}
+
+button#listen-btn {
+    /*position: absolute;*/
+    background: url(../images/listen_btn.png) no-repeat;
+    margin: 0px 10px;
+    background-size: cover;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    border: 0;
+    outline: 0;
+    border-radius: 25px;
+    background-color: transparent;
+    -webkit-box-shadow: 2px 6px 6px -2px rgba(0, 0, 0, 0.40);
+    -moz-box-shadow: 2px 6px 6px -2px rgba(0, 0, 0, 0.40);
+    box-shadow: 2px 6px 6px -2px rgba(0, 0, 0, 0.40);
+}
+
+
+/************* college exam chart image ***************/
+
+img.chart {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: 60%;
+}
+
+/******************* active sentence *******************/
+
+div.active {
+    display: block;
+    background: #ffffe6;
+    padding: 5px;
+    -moz-border-radius: 0 0 5px 10px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+}
+
+.active a.eng {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #663d00;
+    display: block;
+    padding-left: 2px;
+}
+
+.active a.kor {
+    font-size: 1.0em;
+    font-weight: bold;
+    margin-top: 0;
+    color: #663d00;
+    display: block;
+    padding-left: 2px;
+}
+
+
+/******************* audio player **********************/
+
+.clearfix {
+    clear: both;
+}
+
+#audio-player {
+    /*    position: relative;*/
+    box-sizing: border-box;
+    width: 350px;
+    height: auto;
+    /*    overflow: hidden;*/
+    margin: 10px auto;
+    padding: 4px;
+    -moz-border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+    border-bottom: thick double #ddd;
+}
+
+div#button-control {
+    /*    margin: 0 10px;*/
+    /*    margin: 0;*/
+    /*border: #666 solid 1px;*/
+    /*
+    height: 30px;
+    width: 30px;
+*/
+    /*border: #666 solid 1px;*/
+    float: left;
+}
+
+button#play {
+    background: url(../images/play.png) no-repeat;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+}
+
+button#pause {
+    background: url(../images/pause.png) no-repeat;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+}
+
+
+#seek-control {
+    /*    float: left;*/
+    margin: 0 40px;
+    /*    background: #ccc;*/
+}
+
+input#seekbar {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    -webkit-appearance: none !important;
+    background: #aaa;
+    height: 3px;
+    border: 0;
+    outline: 0;
+
+}
+
+input#seekbar::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    background: url(../images/runner.png) no-repeat;
+    background-size: cover;
+    height: 20px;
+    width: 20px;
+    /*    margin-left: -px;*/
+    border: 0;
+    outline: 0;
+}
+
+#elapsed {
+    display: inline-block;
+    width: auto;
+    font-weight: bold;
+    font-size: 0.7em;
+    /*    background: #ccc;*/
+    /*    padding-top: 3px;*/
+    margin: 0 20px;
+    text-align: center;
+}
+
+
+
+div#fast-control {
+    /*    background: #ccc;*/
+    width: 150px;
+    /*    margin-top: -15px;*/
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+button#fast-forward {
+    background: url(../images/forward.png) no-repeat;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+    border: 0;
+    outline: 0;
+    /*    margin-left: 10px;*/
+    float: right;
+}
+
+button#fast-backward {
+    background: url(../images/backword.png) no-repeat;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+    border: 0;
+    outline: 0;
+    margin-right: 6px;
+    float: left;
+}
+
+div#tran-lang-control {
+    width: 30px;
+    margin: 0;
+    height: 30px;
+    float: right;
+    /*    border: thin solid #000;*/
+}
+
+button#trans-lang-toggle {
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    background: url(../images/question.png) no-repeat;
+    background-size: cover;
+    /*    float: right;*/
+    border: 0;
+    outline: 0;
+}
+
+button#hide-trans {
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    background: url(../images/return.png) no-repeat;
+    background-size: cover;
+    /*    float: right;*/
+    border: 0;
+    outline: 0;
+}
+
+/******************* inline sub comment <em> elements ****************/
+
+em.red {
+    color: #ff0066;
+    font-weight: bold;
+}
+
+em.green {
+    color: #009930;
+    font-weight: bold;
+}
+
+em.orange {
+    color: #ff8000;
+    font-weight: bold;
+
+}
+
+em.blue {
+    color: #0000e6;
+    font-weight: bold;
+}
+
+/********* Wobble Vertical ****************************/
+/* Wobble Horizontal */
+@-webkit-keyframes hvr-wobble-horizontal {
+  16.65% {
+    -webkit-transform: translateX(8px);
+    transform: translateX(8px);
+  }
+  33.3% {
+    -webkit-transform: translateX(-6px);
+    transform: translateX(-6px);
+  }
+  49.95% {
+    -webkit-transform: translateX(4px);
+    transform: translateX(4px);
+  }
+  66.6% {
+    -webkit-transform: translateX(-2px);
+    transform: translateX(-2px);
+  }
+  83.25% {
+    -webkit-transform: translateX(1px);
+    transform: translateX(1px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes hvr-wobble-horizontal {
+  16.65% {
+    -webkit-transform: translateX(8px);
+    transform: translateX(8px);
+  }
+  33.3% {
+    -webkit-transform: translateX(-6px);
+    transform: translateX(-6px);
+  }
+  49.95% {
+    -webkit-transform: translateX(4px);
+    transform: translateX(4px);
+  }
+  66.6% {
+    -webkit-transform: translateX(-2px);
+    transform: translateX(-2px);
+  }
+  83.25% {
+    -webkit-transform: translateX(1px);
+    transform: translateX(1px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+.hvr-wobble-horizontal {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-animation-name: hvr-wobble-horizontal;
+  animation-name: hvr-wobble-horizontal;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+/*
+.hvr-wobble-horizontal:hover, .hvr-wobble-horizontal:focus, .hvr-wobble-horizontal:active {
+  -webkit-animation-name: hvr-wobble-horizontal;
+  animation-name: hvr-wobble-horizontal;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+*/
+
+@-webkit-keyframes hvr-wobble-vertical {
+    16.65% {
+        -webkit-transform: translateY(8px);
+        transform: translateY(8px);
+    }
+    33.3% {
+        -webkit-transform: translateY(-6px);
+        transform: translateY(-6px);
+    }
+    49.95% {
+        -webkit-transform: translateY(4px);
+        transform: translateY(4px);
+    }
+    66.6% {
+        -webkit-transform: translateY(-2px);
+        transform: translateY(-2px);
+    }
+    83.25% {
+        -webkit-transform: translateY(1px);
+        transform: translateY(1px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes hvr-wobble-vertical {
+    16.65% {
+        -webkit-transform: translateY(8px);
+        transform: translateY(8px);
+    }
+    33.3% {
+        -webkit-transform: translateY(-6px);
+        transform: translateY(-6px);
+    }
+    49.95% {
+        -webkit-transform: translateY(4px);
+        transform: translateY(4px);
+    }
+    66.6% {
+        -webkit-transform: translateY(-2px);
+        transform: translateY(-2px);
+    }
+    83.25% {
+        -webkit-transform: translateY(1px);
+        transform: translateY(1px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+.hvr-wobble-vertical {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.hvr-wobble-vertical:hover,
+.hvr-wobble-vertical:focus,
+.hvr-wobble-vertical:active {
+    -webkit-animation-name: hvr-wobble-vertical;
+    animation-name: hvr-wobble-vertical;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+.hvr-wobble-vertical-animation {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-animation-name: hvr-wobble-vertical;
+    animation-name: hvr-wobble-vertical;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+/*********************** Media Definition *************************************/
+@media only screen and (min-width: 350px) and (max-width: 450px) and (orientation: portrait) {
+
+   body {
+      width: 100%;
+
+   }
+
+   #audio-player {
+      width: 100%;
+   }
+
+   .main-text div.sentence a.eng {
+      font-size: 1.1em;
+   }
+
+   .sentence a.kor {
+      font-size: 1em;
+   }
+
+   #fixed-bar-top #header {
+      width: 100%;
+   }
+
+   #footer {
+      width: 100%;
+   }
+
+    /************************* Home Menu ***********************/
+
+#nav-table {
+/*    padding: 50px 5%;*/
+    width: 100%;
+    margin-top: 20px;
+   }
+
+#nav-table .nav-row {
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+#nav-table .nav-cell {
+    width: 50%;
+    margin: 30px auto;
+     font-family: 'Arial', serif;
+}
+
+#nav-table div#cell-1 {
+            float: none;
+
+}
+
+#nav-table div#cell-2 {
+    width: 50%;
+    margin: 30px auto;
+     float: none;
+}
+
+#nav-table div#cell-3 {
+    float: none;
+
+}
+
+#nav-table div#cell-4, #nav-table div#cell-6 {
+       float: none;
+}
+
+#nav-table div#cell-5, #nav-table div#cell-7 {
+     width: 50%;
+    float:none;
+}
+
+
+#nav-table h5 {
+    width: 130px;
+    height: 22px;
+    margin: 0 auto;
+    text-align: center;
+    padding-left: 20px;
+    padding-top: 0px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #000;
+    background: url(../images/grade.png) no-repeat;
+    background-size: 15%;
+    background-position: 10px;
+    background-color: cyan;
+    border-radius: 15px;
+}
+
+#nav-table ul {
+    width: 130px;
+    margin: 10px auto;
+}
+
+#nav-table li {
+    margin: 5px auto 0 auto;
+    width: 6.5em;
+    text-align: center;
+    padding-left: 20px;
+    font-size: 1em;
+    font-weight: 700;
+    color: #fff;
+    background: url(../images/lesson.png) no-repeat;
+    background-size: 12%;
+    background-position: 2px;
+}
+
+/*
+div.nav-row div#cell-6 li, div.nav-row div#cell-7 li {
+    background-position: 2px;
+    padding-left: 20px;
+}
+*/
+
+#nav-table a {
+    text-decoration: none;
+    color: #fff;
+}
+
+}

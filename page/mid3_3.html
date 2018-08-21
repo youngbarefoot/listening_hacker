@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8" name="viewport" content="width=device-width">
+   <title>Mid3: Lesson 3. Our Class Diary</title>
+   <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+   <div id="fixed-bar-top">
+      <div id="header">
+         <h2 id="title-bar" data-title="mid3_03">
+            <span id="lesson">MID III</span>
+            <span id="lesson_title">Our Class Diary</span>
+            <span id="chapter">03</span>
+         </h2>
+         <!-- The end of header -->
+      </div>
+   </div>
+   <!-- The end of  fixed-bar-top -->
+   <div id="read">
+      <div id="audio-player">
+         <div id="button-control">
+            <button id="play"></button>
+            <button id="pause"></button>
+         </div>
+         <div id="tran-lang-control">
+            <button id="trans-lang-toggle"></button>
+            <button id="hide-trans"></button>
+         </div>
+         <div id="seek-control">
+            <input id="seekbar" type="range" min="0" max="100" value="0" step="1"/>
+         </div>
+         <div id="fast-control">
+            <button id="fast-backward"></button>
+            <button id="fast-forward"></button>
+            <span id="elapsed" class="control">00:00</span>
+         </div>
+         <div class="clearfix"></div>
+      </div>
+
+      <div class="dialog">
+         <h4>Listen &amp; Speak 1A</h4>
+         <i>B: </i>
+         <i>
+            <a>What's wrong? </a>
+            <a>무슨 일 있니? </a>
+            <a>You look worried. </a>
+            <a>걱정스러워 보여.</a>
+         </i>
+         <i>G: </i>
+         <i>
+            <a>Well, Jina doesn't talk to me anymore. </a>
+            <a>음, 지나가 더 이상 나에게 말을 하지 않아.</a>
+         </i>
+         <i>B: </i>
+         <i>
+            <a>Why? Did you do something wrong? </a>
+            <a>왜? 네가 잘못한 것 있니?</a>
+         </i>
+         <i>G: </i>
+         <i>
+            <a>I don't know. </a>
+            <a>모르겠어. </a>
+            <a>Do you think I should talk to her first? </a>
+            <a>너는 내가 먼저 그녀에게 말해야 한다고 생각하니?</a>
+         </i>
+         <i>B: </i><i>
+            <a>Well, why don't you write her a letter instead? </a>
+            <a>글쎄, 대신 그녀에게 편지를 써 보는 게 어때?</a>
+         </i>
+         <i>G: </i>
+         <i>
+            <a>That's a good idea. </a>
+            <a>좋은 생각이야. </a>
+            <a>I'll do that. </a>
+            <a>그렇게 해 볼게.</a>
+         </i>
+
+         <h4>Bring Together</h4>
+         <i>Minjun :</i>
+         <i>
+            <a>Hey, Molly! You don't look good. </a>
+            <a>이봐, Molly! 너 기분 안 좋아 보여. </a>
+            <a>What's wrong? </a>
+            <a>무슨 일 있니?</a>
+         </i>
+         <i>Molly :</i>
+         <i>
+            <a>Hi, Minjun. I want to go to the movies with Eric, but .... </a>
+            <a>안녕, 민준아. 나는 Eric이랑 영화 보러 가고 싶은데⋯.</a>
+         </i>
+         <i>Minjun :</i>
+         <i>
+            <a>Are you afraid to ask him? </a>
+            <a>그에게 물어보기 두려운 거니?</a>
+         </i>
+         <i>Molly :</i>
+         <i>
+            <a>Yes. I'm very nervous in front of him. </a>
+            <a>응. 나는 그 애 앞에서 매우 긴장돼. </a>
+            <a>What should I do? </a>
+            <a>어떻게 해야 하지?</a>
+         </i>
+         <i>Minjun :</i>
+         <i>
+            <a>Have you tried to send him a text? </a>
+            <a>그에게 문자 메시지를 보내려 한 적 있니?</a>
+         </i>
+         <i>Molly :</i>
+         <i>
+            <a>No, do you think I should send him one? </a>
+            <a>아니, 너는 내가, 그에게 문자 메시지를 보내야 한다고 생각하니?</a>
+         </i>
+         <i>Minjun :</i>
+         <i>
+            <a>Yes, I think you should. </a>
+            <a>응, 난 그래야 한다고 생각해. </a>
+            <a>That could be a good way to ask him. </a>
+            <a>그에게 물어 볼 수 있는 좋은 방법일 수 있어.</a>
+         </i>
+         <i>Molly :</i>
+         <i>
+            <a>Thanks for your advice. </a>
+            <a>충고 고마워. </a>
+            <a>I'll be brave and send him a text. </a>
+            <a>용기를 내어서 그에게 문자 메시지를 보내 볼게.</a>
+         </i>
+         <i>Minjun :</i>
+         <i>
+            <a>Good. I'll keep my fingers crossed for you!</a>
+            <a>좋아. 내가 널 위해 행운을 빌어 줄게!</a>
+         </i>
+
+         <h4>Listen &amp; Speak 1B</h4>
+         <i>B: </i>
+         <i>
+            <a>What's the matter, Suji? </a>
+            <a>수지야, 무슨 일 있니? </a>
+            <a>You look upset. </a>
+            <a>너 기분이 언짢아 보여.</a>
+         </i>
+         <i>G: </i>
+         <i>
+            <a>Minho borrowed my notebook a week ago. </a>
+            <a>일주일 전에 민호가 내 공책을 빌려 갔어.</a>
+         </i>
+         <i>B: </i>
+         <i>
+            <a>Oh, but he didn't give it back to you, right? </a>
+            <a>아, 그런데 너에게 돌려주지 않았구나, 맞지?</a>
+         </i>
+         <i>G: </i>
+         <i>
+            <a>Right. Do you think I should tell him I need it? </a>
+            <a>맞아. 그에게 내가 그것이 필요하다고 말해야 된다고 생각하니?</a>
+         </i>
+         <i>B: </i>
+         <i>
+            <a>Of course. Maybe he forgot about it. </a>
+            <a>물론이지. 아마도 그는 그것에 대해 잊어버렸을 거야.</a>
+         </i>
+         <i>G: </i>
+         <i>
+            <a>You're right. I'll talk to him tomorrow. </a>
+            <a>네 말이 맞아. 내일 그에게 말해 봐야겠어.</a>
+         </i>
+
+         <h4>Listen &amp; Speak 2A</h4>
+         <i>G: </i>
+         <i>
+            <a>Are you going to practice again? </a>
+            <a>너 또 연습하러 가니?</a>
+         </i>
+         <i>B: </i>
+         <i>
+            <a>Yes, I have an important match tomorrow. </a>
+            <a>응, 나 내일 중요한 시합이 있어. </a>
+            <a>I'm so nervous. </a>
+            <a>나 너무 떨려.</a>
+         </i>
+         <i>G: </i>
+         <i>
+            <a>You've worked really hard. </a>
+            <a>넌 그동안 정말로 열심히 연습했잖아. </a>
+            <a>You'll be fine. </a>
+            <a>잘할 거야.</a>
+         </i>
+         <i>B: </i>
+         <i>
+            <a>Thanks a lot. </a>
+            <a>정말 고마워. </a>
+            <a>I'm feeling much better. </a>
+            <a>훨씬 기분이 나아졌어.</a>
+         </i>
+         <i>G: </i>
+         <i>
+            <a>I'll keep my fingers crossed for you! </a>
+            <a>내가 널 위해 행운을 빌어 줄게!</a>
+         </i>
+
+         <h4>Listen &amp; Speak 2B</h4>
+         <i>G: </i>
+         <i>
+            <a>What do you think of this picture? </a>
+            <a>이 그림에 대해 어떻게 생각하니? </a>
+            <a>I drew it for an art contest. </a>
+            <a>미술 대회를 위해 그렸어.</a>
+         </i>
+         <i>B: </i>
+         <i>
+            <a>It's very nice! </a>
+            <a>정말 멋지다! </a>
+            <a>I like it a lot. </a>
+            <a>마음에 들어.</a>
+         </i>
+         <i>G: </i>
+         <i>
+            <a>Really? But I'm afraid my painting is not good enough for the contest. </a>
+            <a>정말이니? 하지만 내 그림이 대회를 위해 충분히 훌륭하지 않을까봐 걱정이 돼.</a>
+         </i>
+         <i>B: </i>
+         <i>
+            <a>Come on! You're the best in our school. </a>
+            <a>무슨 소리야! 넌 우리 학교에서 최고잖아.</a>
+         </i>
+         <i>G: </i>
+         <i>
+            <a>Thank you. That makes me feel better. </a>
+            <a>고마워. 그 말을 들으니 기분이 나아진다.</a>
+         </i>
+         <i>B: </i>
+         <i>
+            <a>I'll keep my fingers crossed for you! </a>
+            <a>내가 널 위해 행운을 빌어 줄게!</a>
+         </i>
+
+         <h4>Let's Check A</h4>
+         <i>G: </i>
+         <i>
+            <a>Hey, Tom. What happened to the 106? </a>
+            <a>이봐, Tom. 106번 버스에 무슨 일이 일어난 거야? </a>
+            <a>The bus is not coming. </a>
+            <a>버스가 오지 않고 있어.</a>
+         </i>
+         <i>B: </i>
+         <i>
+            <a>That bus doesn't come here anymore. </a>
+            <a>그 버스는 더 이상 이곳을 지나지 않아.</a>
+         </i>
+         <i>G: </i>
+         <i>
+            <a>Oh, no! I won't make it to the LJ concert on time. </a>
+            <a>아, 이런! 나는 제시간에 LJ 콘서트에 도착하지 못할 거야.</a>
+         </i>
+         <i>B: </i>
+         <i>
+            <a>Why don't you take a taxi, then? </a>
+            <a>그러면, 택시를 타는 건 어때? </a>
+            <a>Oh, there is a taxi coming now. </a>
+            <a>아, 지금 택시가 오고 있어.</a>
+         </i>
+         <i>G: </i>
+         <i>
+            <a>I'll take it. </a>
+            <a>택시를 타야겠어. </a>
+            <a>Wish me luck, Tom. </a>
+            <a>나에게 행운을 빌어줘, Tom. </a>
+            <a>I hope I can get there on time. </a>
+            <a>내가 제시간에 그곳에 도착할 수 있기를 바라.</a>
+         </i>
+         <i>B: </i>
+         <i>
+            <a>Okay. I'll keep my fingers crossed for you! </a>
+            <a>알겠어. 널 위해 행운을 빌어 줄게!</a>
+         </i>
+
+
+         <h4>Let's Check B</h4>
+         <i>G: </i>
+         <i>
+            <a>I'm going to buy a gift for Jenny's birthday. </a>
+            <a>나는 Jenny의 생일 선물을 살 예정이야. </a>
+            <a>What should I buy? </a>
+            <a>무엇을 사야 할까?</a>
+         </i>
+         <i>B: </i>
+         <i>
+            <a>Well, I know that jenny likes reading books. </a>
+            <a>음, 난 Jenny가 책 읽는 것을 좋아한다는 것을 알고 있어.</a>
+         </i>
+         <i>G: </i>
+         <i>
+            <a>Then, do you think I should give her a book? </a>
+            <a>그러면, 내가 그녀에게 책을 줘야 한다고 생각하니?</a>
+         </i>
+         <i>B: </i>
+         <i>
+            <a>Yes. I think she'll be happy to get a book. </a>
+            <a>응. 그녀가 책을 받고 기뻐할 거라고 생각해.</a>
+         </i>
+         <i>G: </i>
+         <i>
+            <a>Okay. Thank you for your advice. </a>
+            <a>좋아. 네 조언 고마워.</a>
+         </i>
+      </div>
+
+      <div class="main-text">
+         <div class="sentence">
+            <h4>Our Class Diary</h4>
+         </div>
+         <p>
+            <a>A diary is not something to share. </a>
+            <a>일기는 함께 공유하는 것이 아니야.</a>
+            <a>In our class, however, we have a diary to share. </a>
+            <a>하지만 우리 반에는 함께 공유하는 일기장이 하나 있어.</a>
+            <a>Any student can write in it. </a>
+            <a>어느 학생이든지 그 안에 글을 쓸 수 있단다.</a>
+            <a>Do you want to take a look at it? </a>
+            <a>그것을 한번 보고 싶니?</a>
+         </p>
+         <p>
+            <em style="font-weight: bold;">Monday, April 27</em><br>
+            <a>Last night I was playing my favorite computer game. </a>
+            <a>어젯밤에 나는 내가 가장 좋아하는 컴퓨터 게임을 하고 있었어.</a>
+            <a>I almost won the game. </a>
+            <a>나는 게임을 거의 이기고 있었어.</a>
+            <a>Then, my mom came in my room. </a>
+            <a>그때, 엄마가 내 방에 들어오셨어.</a>
+            <a>She got very angry and turned off my computer. </a>
+            <a>엄마는 매우 화가 나셨고, 내 컴퓨터를 꺼버리셨어.</a>
+            <a>She told me that I am addicted to computer games. </a>
+            <a>엄마는 내가 컴퓨터 게임에 중독되었다고 말씀하셨어.</a>
+            <a>But I'm NOT! </a>
+            <a>하지만 난 그렇지 않아.</a>
+            <a>I play games only four hours a day. </a>
+            <a>나는 하루에 단지 네 시간 동안만 게임을 한단 말이야.</a>
+            - Siwan
+         </p>
+
+         <p>
+            <a>Hey, Siwan. </a>
+            <a>이봐, 시완아.</a>
+            <a>My dad caught me playing the game with you last night, too. </a>
+            <a>나도 아빠에게 어젯밤 너랑 게임하는 걸 들켜버렸어.</a>
+            <a>I think we won't be able to meet online anymore. </a>
+            <a>내 생각에 우리는 더 이상 온라인에서 만나지 못할 것 같아.</a>
+            - John
+         </p>
+
+
+         <p>
+            <a>I think you ARE addicted to games. </a>
+            <a>나는 네가 게임에 중독된 것 같은데.</a>
+            <a>You talk about games with your friends all the time! </a>
+            <a>너는 친구들이랑 항상 게임에 대해 이야기하잖아!</a>
+            <a>If I were you, I would talk with the school counselor and ask for help! </a>
+            <a>내가 만약 너라면, 나는 학교 상담 선생님과 이야기해서 도움을 요청하겠어!</a>
+            - Jisu
+         </p>
+
+         <p>
+            <em style="font-weight: bold;">Thursday, May 7 </em><br>
+            <a>In our last P.E. class, we learned how to play basketball. </a>
+            <a>지난 체육 시간에 우리는 농구하는 방법을 배웠어.</a>
+            <a>I practiced shooting a basketball many times, but I could not make even one basket. </a>
+            <a>난 농구공을 골에 넣는 것을 여러 번 연습했지만 한 골도 넣을 수 없었어.</a>
+            <a>So I practiced all day long on Sunday, and guess what? </a>
+            <a>그래서 나는 일요일에 하루 종일 연습했고 어떻게 됐는지 아니?</a>
+            <a>I finally made a basket! </a>
+            <a>난 마침내 골대에 공을 던져 넣었단다!</a>
+            <a>Yeah! </a>
+            <a>예!</a>
+            - Semi
+         </p>
+
+         <p>
+            <a>Good job! Hooray! </a>
+            <a>잘했어! 만세!</a>
+            - Sora
+         </p>
+
+         <p>
+            <a>You go girl! </a>
+            <a>힘내라!</a>
+            <a>But you should have asked me how to shoot basketball. </a>
+            <a>하지만 너는 농구공을 어떻게 던져 넣는지 나한테 물어봤어야 했는데.</a>
+            <a>Let me give you some tips next time! </a>
+            <a>다음번 에는 내가 몇 가지 비결을 알려 줄게!</a>
+            - Tom
+         </p>
+
+         <p>
+            <em style="font-weight: bold;">Tuesday, May 12 </em><br>
+            <a>I have a sister.</a>
+            <a>나는 여동생이 한 명 있어.</a>
+            <a>She is cute and nice. </a>
+            <a>그녀는 귀엽고 착해.</a>
+            <a>But there is one thing that upsets me. </a>
+            <a>하지만 나를 화나게 하는 한 가지가 있어.</a>
+            <a>She likes to wear my clothes! </a>
+            <a>그녀는 내 옷 입기를 좋아해.</a>
+            <a>A couple of days ago, I wanted to wear my red shirt. </a>
+            <a>며칠 전에 나는 내 빨간색 셔츠를 입고 싶었어.</a>
+            <a>But it was not in my closet. </a>
+            <a>하지만 그것은 내 옷장에 없었어.</a>
+            <a>My mom told me that my sister put it on and went out to meet her friend. </a>
+            <a>엄마가 여동생이 그걸 입고 친구들을 만나러 나갔다고 말씀해 주셨어.</a>
+            <a>She should have asked me before she wore my clothes. </a>
+            <a>그녀는 내 옷을 입기 전에 나에게 물어봤었어야 해.</a>
+            - Rebecca
+         </p>
+
+         <p>
+            <a>Does your sister know that you don't want her to wear your clothes? </a>
+            <a>네 여동생은 네가 네 옷을 그녀가 입는 걸 원하지 않는 다는 것을 알고 있니?</a>
+            <a>Why don't you have a talk with her? </a>
+            <a>그녀와 함께 대화를 해 보는 건 어때?</a>
+            - Ujin
+         </p>
+
+         <p>
+            <a>Come on, give her a break.</a>
+            <a>이봐, 그녀를 좀 봐줘. </a>
+            <a>I also like to wear my sister's clothes. </a>
+            <a>나도 역시 우리 언니 옷을 입는 걸 좋아하거든.</a>
+            <a>They always look better than mine. </a>
+            <a>그것들이 항상 내 것보다 더 좋아 보여.</a>
+            - Yuri
+         </p>
+
+         <p>
+            <em style="font-weight: bold;">Friday, May 22 </em><br>
+            <a>Finally, it's Friday! </a>
+            <a>마침내 금요일이야!</a>
+            <a>I am planning to make a special Indian dish this evening. </a>
+            <a>난 오늘 저녁에 특별한 인도 음식을 만들려고 계획 중이야.</a>
+            <a>Does anybody want to join me? </a>
+            <a>나와 함께 할 사람?</a>
+            <br>- Anita
+         </p>
+
+         <p>
+            <a>I do! </a>
+            <a>나!</a>
+            <a>Yum, yum! </a>
+            <a>냠냠!</a>
+            - Mina
+         </p>
+
+         <p>
+            <a>Me, too! </a>
+            <a>나도!</a>
+            <a>Is there anything I should bring? </a>
+            <a>내가 가져가야 할 게 있니?</a>
+            - Rami
+         </p>
+
+         <p>
+            <a>If I had time, I would join you. </a>
+            <a>시간만 있으면, 나도 함께 할 텐데.</a>
+            <a>But I have to visit my grandma. </a>
+            <a>하지만 난 할머니를 뵈러 가야해. </a>
+            <a>Maybe next time! </a>
+            <a>아마도 난 다음 기회에!</a>
+            - Jihun
+         </p>
+      </div>
+   </div>
+   <div id="fixed-bar-bottom">
+      <div id="footer">
+         <div id="menu-btn">
+            <button type="button" id="home-btn" class="hvr-wobble-vertical"></button>
+            <button type="button" id="dict-btn" class="hvr-wobble-vertical"></button>
+            <button type="button" id="listen-btn" class="hvr-wobble-vertical"></button>
+         </div>
+         <p>Copyright &copy; All rights Reserved</p>
+      </div>
+   </div>
+   <script src="../js/jquery-3.2.1.js"></script>
+   <script src="../js/script.js"></script>
+</body>
+</html>
